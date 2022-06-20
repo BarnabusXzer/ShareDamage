@@ -1,0 +1,28 @@
+api-version: 1.18
+author: wvandyk
+descriptions: "A Fun Minecraft Plugin That Modifies the Damage All Players Take When A Single Player Takes Damage"
+main: dev.wvandyk.sharedamage.Main
+name: ShareDamage
+version: 1.0
+
+
+
+commands:
+  sharedamage:
+    aliases: [sd, share-damage, sharedamage]
+    description: "When the sharedamage command is used players will begin taking modified damage according to the command arguments | For more help use '/help sd'"
+    permission: sd.sharedamage
+    usage: "Usage: /shareddamage (On|Off) [Equal|Shared|Inverse] [Easy|Medium|Intermediate|Hard|Impossible]"
+  showcause:
+    aliases: [sc, show-cause, showcause]
+    description: "When the showcause command is used the cause for the original damage is outputed to the player chat | For more help use '/help sc'"
+    permission: sd.showcause
+    usage:  "Usage: /showcause (On|Off)"
+
+permissions:
+  sd.sharedamage:
+    default: op
+    description: "Allows you to use the /sharedamage command"
+  sd.showcause:
+    default: op
+    description: "Allows you to use the /showcause command"
